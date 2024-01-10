@@ -1,0 +1,27 @@
+
+.app__rollingitem-delight{
+    position: relative;
+}
+.app__rollingitem-spoons{
+    position: absolute;
+    top: 28%;
+    left: 27%;
+}
+.rotate {
+    animation: rotation 10s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    .app__rollingitem-delight{
+      display: none;
+    }
+  }
